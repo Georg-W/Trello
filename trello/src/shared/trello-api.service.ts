@@ -11,6 +11,7 @@ export class TrelloApi {
 
   myData: any;
   myList: any = "57f67177b6d6dc24e2e36a41";
+  currentBoard: any = {};
 
   newCard = {
     name: '****My New Test Card',
@@ -26,6 +27,10 @@ export class TrelloApi {
   getBoards (){
     return Trello.get('/member/me/boards',{ fields: "name, id"} ,this.successGetBoard, this.failureGetBoard);
   };
+
+  getLists(boardID){
+    return Trello.get('/boards/'+boardID+'/lists', this.successGetList, this.failureGetList);
+  }
 
   constructor() {
 
@@ -52,12 +57,19 @@ export class TrelloApi {
   };
 
   successGetBoard: any = function(data) {
-    let body = data;
-    return body.data || {};
+    console.log("gotBoards");
   };
 
   failureGetBoard: any = function() {
     return Observable.throw("fail getBoard");
+  };
+
+  successGetList: any = function(data) {
+    console.log("got lists");
+  };
+
+  failureGetList: any = function() {
+    return Observable.throw("fail getList");
   };
 
   creationSuccess: any = function(data) {
