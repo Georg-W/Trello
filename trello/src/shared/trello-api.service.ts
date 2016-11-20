@@ -29,6 +29,10 @@ export class TrelloApi {
     return Trello.get('/boards/'+boardID+'/lists', this.successGetList, this.failureGetList);
   }
 
+  putListName(newName, listID){
+    Trello.put('/lists/'+listID,{name: newName});
+  }
+
   constructor() {
 
     Trello.authorize({

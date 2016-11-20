@@ -9,8 +9,9 @@
 <ion-content padding>
   <h1>Lists</h1>
   <ion-list>
-    <button ion-item *ngFor="let item of lists">
-      {{item.name}}
-    </button>
+    <div ion-item *ngFor="let item of lists">
+      {{item.name}} <button (click)="listSelected($event, item)">EDIT</button>
+    </div>
+
   </ion-list>
 </ion-content>
