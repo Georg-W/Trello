@@ -9,7 +9,6 @@ declare let Trello: any;
 @Injectable()
 export class TrelloApi {
 
-  fileEntry: any;
   myData: any;
   myList: any = "57f67177b6d6dc24e2e36a41";
 
@@ -25,7 +24,7 @@ export class TrelloApi {
   };
 
   getBoards (){
-    return Trello.get('/member/me/boards',{ fields: "id"} ,this.successGetBoard, this.failureGetBoard);
+    return Trello.get('/member/me/boards',{ fields: "name, id"} ,this.successGetBoard, this.failureGetBoard);
   };
 
   constructor() {
