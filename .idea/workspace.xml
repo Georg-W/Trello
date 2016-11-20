@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9e3e18-86c2-4680-a510-22088b3d8821" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/List/list.html" afterPath="$PROJECT_DIR$/trello/src/pages/List/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/List/list.ts" afterPath="$PROJECT_DIR$/trello/src/pages/List/list.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" afterPath="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" />
@@ -50,30 +51,32 @@
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="252">
+              <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="58" column="48" lean-forward="false" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+            <state relative-caret-position="248">
+              <caret line="108" column="31" lean-forward="false" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
               <folding>
                 <element signature="e#43#85#0" expanded="true" />
+                <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+                <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trello-api.service.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="trello-api.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trello/src/shared/trello-api.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+            <state relative-caret-position="332">
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -107,8 +110,8 @@
         <option value="$PROJECT_DIR$/trello/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/trello/src/pages/Board/board.ts" />
         <option value="$PROJECT_DIR$/trello/src/pages/List/list.html" />
-        <option value="$PROJECT_DIR$/trello/src/pages/List/list.ts" />
         <option value="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" />
+        <option value="$PROJECT_DIR$/trello/src/pages/List/list.ts" />
       </list>
     </option>
   </component>
@@ -358,12 +361,12 @@
       <updated>1479593011675</updated>
       <workItem from="1479593012841" duration="7234000" />
       <workItem from="1479638641376" duration="17085000" />
-      <workItem from="1479673520904" duration="8502000" />
+      <workItem from="1479673520904" duration="12394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32821000" />
+    <option name="totallyTimeSpent" value="36713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="973" y="0" width="955" height="1038" extended-state="0" />
@@ -452,6 +455,8 @@
           <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="e#43#85#0" expanded="true" />
+            <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -564,27 +569,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="252">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/shared/trello-api.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="58" column="48" lean-forward="false" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        <state relative-caret-position="248">
+          <caret line="108" column="31" lean-forward="false" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
           <folding>
             <element signature="e#43#85#0" expanded="true" />
+            <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trello/src/shared/trello-api.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>

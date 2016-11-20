@@ -9,8 +9,11 @@
 <ion-content padding>
   <h1>Lists</h1>
   <ion-list>
+    <button (click)="createList()">CREATE</button>
     <div ion-item *ngFor="let item of lists">
-      {{item.name}} <button (click)="listSelected($event, item)">EDIT</button>
+      {{item.name}}
+      <button (click)="listUpdateSelected($event, item)">EDIT</button>
+      <button (click)="listDeleteSelected($event, item)">DELETE</button>
     </div>
 
   </ion-list>

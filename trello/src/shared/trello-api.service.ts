@@ -7,19 +7,8 @@ declare let Trello: any;
 
 export class TrelloApi {
 
-  myData: any;
-  myList: any = "57f67177b6d6dc24e2e36a41";
-
-  newCard = {
-    name: '****My New Test Card',
-    desc: '****This is the description of our new card.',
-    idList: this.myList,
-    pos: 'top'
-  };
-
-  sendCard: any = function() {
-    Trello.post('/cards/', this.newCard, this.creationSuccess.bind(this));
-  };
+  listname: String = "Test";
+  activeBoard: any;
 
   getBoards (){
     return Trello.get('/member/me/boards',{ fields: "name, id"} ,this.successGetBoard, this.failureGetBoard);
@@ -31,7 +20,13 @@ export class TrelloApi {
 
   putListName(newName, listID){
     Trello.put('/lists/'+listID,{name: newName});
-  }
+  };
+  deleteList(listID){
+    Trello.put('/lists/'+listID,{closed: true});
+  };
+  createList(board, name){
+    Trello.post('/lists/',board,name,this.creationSuccess);
+  };
 
   constructor() {
 
