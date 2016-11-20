@@ -16,20 +16,16 @@ import {NavController, NavParams} from "ionic-angular";
 
 export class BoardPage{
 
-  //lists: any;
-  //private errorMessage = "fail";
+  lists: any;
 
-constructor(nav: NavController){}
+constructor(private nav: NavController, private navParams: NavParams, private trelloApi: TrelloApi){}
 
   ionViewDidLoad(){
-  //  this.trelloApi.getLists().then(data=> this.lists = data);
+  let selectedBoard = this.navParams.data.id;
+  console.log(selectedBoard);
+    this.trelloApi.getLists(selectedBoard).then(data=> this.lists = data);
     console.log('lifecycle didload');
   }
 
-  /*getLists(){
-    this.trelloApi.getLists().subscribe(
-      lists => this.lists = lists,
-      error => this.errorMessage = <any>error);
-  }*/
 
 }

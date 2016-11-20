@@ -13,7 +13,6 @@ import {BoardPage} from "../board/board";
 
 export class HomePage {
 
-  private errorMessage = "fail";
   boards: any;
 
   constructor(private nav: NavController, private trelloApi: TrelloApi){
@@ -21,15 +20,8 @@ export class HomePage {
 
   boardSelected($event, item){
     console.log(item.name + " got clicked");
-    this.nav.push(BoardPage);
+    this.nav.push(BoardPage, item);
   }
-
-  getBoards(){
-    this.trelloApi.getBoards().subscribe(
-      boards => this.boards = boards,
-    error => this.errorMessage = <any>error);
-  }
-
 
 
   ionViewDidLoad(){
