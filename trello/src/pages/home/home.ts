@@ -1,19 +1,21 @@
 import { Component } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
-
 declare var Trello: any;
+
+
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage {
 
 
   fileEntry: any;
   myData: any;
   myList: any = "57f67177b6d6dc24e2e36a41";
+
 
   newCard = {
     name: '****My New Test Card',
@@ -23,12 +25,16 @@ export class HomePage {
   };
 
   readTrello: any = function() {
-    Trello.post('/cards/', this.newCard, this.creationSuccess.bind(this));
+    //Trello.post('/cards/', this.newCard, this.creationSuccess.bind(this));
+  };
+
+  getBoards: any = function() {
+    Trello.get('/member/me/boards',{ fields: "id, name"} ,this.successGetBoard, this.failureGetBoard);
   };
 
 
 
-  constructor(private navController: NavController) {
+  constructor() {
 
     Trello.authorize({
       type: "popup",
@@ -43,9 +49,8 @@ export class HomePage {
     });
 
     this.readTrello();
+    this.getBoards();
 
-    // this line does not work
-    console.log('My data ' + this.myData); // returns undefined
 
   }
 
@@ -56,6 +61,17 @@ export class HomePage {
   };
   authenticationFailure: any = function() {
     console.log("Failed authentication");
+  };
+
+  successGetBoard: any = function(data) {
+    for (let i of data) {
+      console.log(i.id + " " + i.name);
+    }
+
+  };
+
+  failureGetBoard: any = function() {
+    console.log("Fail");
   };
 
   creationSuccess: any = function(data) {
