@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 
 import { TrelloApi } from '../../shared/trello-api.service';
 import {NavController} from "ionic-angular";
-import {BoardPage} from "../board/board";
+import {ListPage} from "../List/list";
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html',
+  templateUrl: 'board.html',
   providers: [
     TrelloApi
   ]
 })
 
-export class HomePage {
+export class BoardPage {
 
   boards: any;
 
@@ -20,7 +20,7 @@ export class HomePage {
 
   boardSelected($event, item){
     console.log(item.name + " got clicked");
-    this.nav.push(BoardPage, item);
+    this.nav.push(ListPage, item);
   }
 
 

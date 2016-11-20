@@ -1,17 +1,14 @@
 /**
  * Created by georg on 20.11.2016.
  */
-import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable'
 declare let Trello: any;
 
 
-@Injectable()
 export class TrelloApi {
 
   myData: any;
   myList: any = "57f67177b6d6dc24e2e36a41";
-  currentBoard: any = {};
 
   newCard = {
     name: '****My New Test Card',

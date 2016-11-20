@@ -8,13 +8,13 @@ import {NavController, NavParams} from "ionic-angular";
 
 @Component({
   selector: 'page-board',
-  templateUrl: 'board.html',
+  templateUrl: 'list.html',
   providers: [
     TrelloApi
   ]
 })
 
-export class BoardPage{
+export class ListPage{
 
   lists: any;
 
