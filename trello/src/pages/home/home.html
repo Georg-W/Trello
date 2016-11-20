@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Boards
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h1>Boards</h1>
+  <ion-list>
+    <button ion-item *ngFor="let item of boards">
+      {{item.id}} hallo
+    </button>
+  </ion-list>
 </ion-content>

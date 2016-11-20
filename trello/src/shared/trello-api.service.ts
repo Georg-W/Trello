@@ -2,7 +2,7 @@
  * Created by georg on 20.11.2016.
  */
 import { Injectable } from '@angular/core';
-
+import { Observable } from 'rxjs/Observable'
 declare let Trello: any;
 
 
@@ -13,7 +13,6 @@ export class TrelloApi {
   myData: any;
   myList: any = "57f67177b6d6dc24e2e36a41";
 
-
   newCard = {
     name: '****My New Test Card',
     desc: '****This is the description of our new card.',
@@ -21,15 +20,13 @@ export class TrelloApi {
     pos: 'top'
   };
 
-  readTrello: any = function() {
-    //Trello.post('/cards/', this.newCard, this.creationSuccess.bind(this));
+  sendCard: any = function() {
+    Trello.post('/cards/', this.newCard, this.creationSuccess.bind(this));
   };
 
-  getBoards: any = function() {
-    Trello.get('/member/me/boards',{ fields: "id, name"} ,this.successGetBoard, this.failureGetBoard);
+  getBoards (){
+    return Trello.get('/member/me/boards',{ fields: "id"} ,this.successGetBoard, this.failureGetBoard);
   };
-
-
 
   constructor() {
 
@@ -44,11 +41,6 @@ export class TrelloApi {
       success: this.authenticationSuccess,
       error: this.authenticationFailure
     });
-
-    this.readTrello();
-    this.getBoards();
-
-
   }
 
 
@@ -61,14 +53,12 @@ export class TrelloApi {
   };
 
   successGetBoard: any = function(data) {
-    for (let i of data) {
-      console.log(i.id + " " + i.name);
-    }
-
+    let body = data;
+    return body.data || {};
   };
 
   failureGetBoard: any = function() {
-    console.log("Fail");
+    return Observable.throw("fail getBoard");
   };
 
   creationSuccess: any = function(data) {
