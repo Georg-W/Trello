@@ -4,7 +4,7 @@
 import { Component } from '@angular/core';
 
 import {TrelloApi} from '../../shared/trello-api.service';
-import {NavController} from "ionic-angular";
+import {NavController, NavParams} from "ionic-angular";
 @Component({
   selector: 'page-card',
   templateUrl: 'card.html',
@@ -15,10 +15,11 @@ import {NavController} from "ionic-angular";
 
 export class CardPage {
 
-  boards: any;
+  cards: any;
+  selectedListID: any;
 
 
-  constructor(private nav: NavController, private trelloApi: TrelloApi){
+  constructor(private nav: NavController, private navParams: NavParams, private trelloApi: TrelloApi){
   }
 
   boardSelected($event, item){
@@ -27,7 +28,8 @@ export class CardPage {
 
 
   ionViewDidLoad(){
-    this.trelloApi.getBoards().then(data=> this.boards = data);
+    this.selectedListID = this.navParams.data.id;
+    this.trelloApi.getCards(this.selectedListID).then(data=> this.cards = data);
     console.log('lifecycle didload');
   }
 

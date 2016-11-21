@@ -8,6 +8,7 @@ declare let Trello: any;
 export class TrelloApi {
 
   currentBoardID : any;
+  currentListID : any;
 
   constructor() {
 
@@ -78,7 +79,12 @@ export class TrelloApi {
   /////////////////////////////////// Cards //////////////////////////////////////////////
 
 
+  getCards(listID){
+    this.currentListID = listID;
+    console.log("cards loaded");
+    return Trello.get("/lists/"+listID+"/cards");
 
+  }
 
 
 
