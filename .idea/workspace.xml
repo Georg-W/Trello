@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9e3e18-86c2-4680-a510-22088b3d8821" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/Card/card.html" afterPath="$PROJECT_DIR$/trello/src/pages/Card/card.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/Card/card.ts" afterPath="$PROJECT_DIR$/trello/src/pages/Card/card.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/IonicTrello.iml" afterPath="$PROJECT_DIR$/.idea/IonicTrello.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/config.xml" afterPath="$PROJECT_DIR$/trello/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" afterPath="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,76 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="board.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trello/src/pages/Board/board.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="11" column="85" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="board.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trello/src/pages/Board/board.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trello-api.service.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trello-api.service.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trello/src/shared/trello-api.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="83" column="32" lean-forward="false" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+            <state relative-caret-position="155">
+              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="e#1#43#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="card.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trello/src/pages/Card/card.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-              <folding>
-                <element signature="e#43#85#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="card.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trello/src/pages/Card/card.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -132,9 +71,10 @@
         <option value="$PROJECT_DIR$/trello/src/pages/Card/Card.ts" />
         <option value="$PROJECT_DIR$/trello/src/pages/List/list.html" />
         <option value="$PROJECT_DIR$/trello/src/pages/List/list.ts" />
-        <option value="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" />
         <option value="$PROJECT_DIR$/trello/src/pages/Card/card.ts" />
         <option value="$PROJECT_DIR$/trello/src/pages/Card/card.html" />
+        <option value="$PROJECT_DIR$/trello/config.xml" />
+        <option value="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" />
       </list>
     </option>
   </component>
@@ -145,12 +85,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/trello/.tmp/node_modules" />
     <handled-path value="$PROJECT_DIR$/trello/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1093" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -246,84 +188,6 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="List" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicTrello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicTrello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Card" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicTrello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicTrello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Board" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicTrello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicTrello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -413,26 +277,26 @@
       <workItem from="1479673520904" duration="12642000" />
       <workItem from="1479723376626" duration="126000" />
       <workItem from="1479730815076" duration="1502000" />
-      <workItem from="1479738629813" duration="12538000" />
+      <workItem from="1479738629813" duration="17478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51127000" />
+    <option name="totallyTimeSpent" value="56067000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1093" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18455844" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18455844" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1672394" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25368065" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -451,9 +315,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16761042" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16534542" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18455844" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18455844" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -464,6 +328,94 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/trello/.tmp/app/app.component.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/app/main.prod.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/app/app.module.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/app/app.component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/app/app.component.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/app/app.module.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/app/main.prod.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/app/app.module.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/shared/trello-api.service.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/shared/trello-api.service.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/Card/card.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/Card/card.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/Card/card.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/Card/card.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/List/list.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/List/list.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/List/list.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/List/list.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/Board/board.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/Board/board.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/Board/board.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/pages/Board/board.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/app/app-root.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/app/app-root.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/nav/nav.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/nav/overlay-portal.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/nav/nav.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/nav/overlay-portal.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/icon/icon.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/icon/icon.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/item/item.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/item/item.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/item/item-reorder.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/item/item-reorder.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/list/list.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/list/list.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/alert/alert-component.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/alert/alert-component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/label/label.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/label/label.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/modal/modal-component.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/modal/modal-component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/toast/toast-component.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/toast/toast-component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/button/button.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/button/button.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/navbar/navbar.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/navbar/navbar.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/picker/picker-component.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/picker/picker-component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/content/content.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/content/content.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/loading/loading-component.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/loading/loading-component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/popover/popover-component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/popover/popover-component.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/spinner/spinner.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/spinner/spinner.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/toolbar/toolbar.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/toolbar/toolbar-title.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/toolbar/toolbar.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/backdrop/backdrop.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/backdrop/backdrop.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/ionic-angular/components/action-sheet/action-sheet-component.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/forms/src/directives/ng_control_status.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/forms/src/directives/ng_model.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/forms/src/directives/ng_control_status.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/forms/src/directives/ng_model.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_for.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_if.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_class.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_switch.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_class.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_style.ngfactory.js.map" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_style.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_switch.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_if.ngfactory.js" />
+        <option value="$PROJECT_DIR$/trello/.tmp/node_modules/@angular/common/src/directives/ng_for.ngfactory.js.map" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -754,18 +706,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trello/src/pages/Board/board.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="12" column="84" lean-forward="false" selection-start-line="12" selection-start-column="84" selection-end-line="12" selection-end-column="84" />
           <folding />
         </state>
       </provider>
@@ -778,19 +730,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trello/src/shared/trello-api.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="83" column="32" lean-forward="false" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
-          <folding>
-            <element signature="e#1#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trello/src/pages/Card/card.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
+        <state relative-caret-position="202">
           <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
             <element signature="e#43#85#0" expanded="true" />
@@ -803,6 +745,40 @@
         <state relative-caret-position="279">
           <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/platforms/android/src/com/ionicframework/trello547479/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-868">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/shared/trello-api.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="e#1#43#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -13,7 +13,7 @@ export class TrelloApi {
   constructor() {
 
     Trello.authorize({
-      type: "popup",
+      type: "redirect",
       interactive: "true",
       name: "Trello",
       scope: {
