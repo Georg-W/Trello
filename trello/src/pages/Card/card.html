@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cards
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Boards</h1>
+  <ion-list>
+    <button ion-item *ngFor="let item of cards" (click)="cardSelected($event, item)">
+      {{item.name}}
+    </button>
+  </ion-list>
+</ion-content>

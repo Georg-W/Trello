@@ -3,12 +3,14 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { BoardPage } from '../pages/Board/board';
 import { ListPage } from '../pages/List/list';
+import { CardPage } from "../pages/Card/card";
 
 @NgModule({
   declarations: [
     MyApp,
     BoardPage,
-    ListPage
+    ListPage,
+    CardPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -17,7 +19,8 @@ import { ListPage } from '../pages/List/list';
   entryComponents: [
     MyApp,
     BoardPage,
-    ListPage
+    ListPage,
+    CardPage
   ],
   providers: []
 })

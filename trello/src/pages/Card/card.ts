@@ -1,17 +1,19 @@
+/**
+ * Created by georg on 21.11.2016.
+ */
 import { Component } from '@angular/core';
 
 import {TrelloApi} from '../../shared/trello-api.service';
 import {NavController} from "ionic-angular";
-import {ListPage} from "../List/list";
 @Component({
-  selector: 'page-board',
-  templateUrl: 'board.html',
+  selector: 'page-card',
+  templateUrl: 'card.html',
   providers: [
     TrelloApi
   ]
 })
 
-export class BoardPage {
+export class CardPage {
 
   boards: any;
 
@@ -21,7 +23,6 @@ export class BoardPage {
 
   boardSelected($event, item){
     console.log(item.name + " got clicked");
-    this.nav.push(ListPage, item);
   }
 
 

@@ -1,20 +1,58 @@
+
 /**
  * Created by georg on 20.11.2016.
  */
-import { Observable } from 'rxjs/Observable'
 declare let Trello: any;
 
 
 export class TrelloApi {
 
-  listname: String = "Test";
-  activeBoard: any;
+  currentBoardID : any;
+
+  constructor() {
+
+    Trello.authorize({
+      type: "popup",
+      interactive: "true",
+      name: "Trello",
+      scope: {
+        read: "true",
+        write: "true" },
+      expiration: "never",
+      success: this.authenticationSuccess,
+      error: this.authenticationFailure
+    });
+  }
+
+/////////////////////////////////// Auth //////////////////////////////////////////////
+
+  authenticationSuccess: any = function() {
+    //This works
+    console.log("Successful authentication");
+  };
+  authenticationFailure: any = function() {
+    console.log("Failed authentication");
+  };
+
+
+  /////////////////////////////////// Boards //////////////////////////////////////////////
 
   getBoards (){
     return Trello.get('/member/me/boards',{ fields: "name, id"} ,this.successGetBoard, this.failureGetBoard);
   };
 
+  successGetBoard: any = function(data) {
+    console.log("gotBoards");
+  };
+
+  failureGetBoard: any = function() {
+    console.log("fail get Boards");
+  };
+
+  /////////////////////////////////// Lists //////////////////////////////////////////////
+
   getLists(boardID){
+    this.currentBoardID = boardID;
     return Trello.get('/boards/'+boardID+'/lists', this.successGetList, this.failureGetList);
   }
 
@@ -25,38 +63,7 @@ export class TrelloApi {
     Trello.put('/lists/'+listID,{closed: true});
   };
   createList(board, setName){
-    Trello.post('/lists/',{name: setName, idBoard: board},this.creationSuccess);
-  };
-
-  constructor() {
-
-    Trello.authorize({
-      type: "popup",
-      interactive: "true",
-      name: "My Application",
-      scope: {
-        read: "true",
-        write: "true" },
-      expiration: "never",
-      success: this.authenticationSuccess,
-      error: this.authenticationFailure
-    });
-  }
-
-  authenticationSuccess: any = function() {
-    //This works
-    console.log("Successful authentication");
-  };
-  authenticationFailure: any = function() {
-    console.log("Failed authentication");
-  };
-
-  successGetBoard: any = function(data) {
-    console.log("gotBoards");
-  };
-
-  failureGetBoard: any = function() {
-    return Observable.throw("fail getBoard");
+    Trello.post('/lists/',{name: setName, idBoard: board});
   };
 
   successGetList: any = function(data) {
@@ -64,15 +71,18 @@ export class TrelloApi {
   };
 
   failureGetList: any = function() {
-    return Observable.throw("fail getList");
+    console.log("fail get lists");
   };
 
-  creationSuccess: any = function(data) {
-    //This works
-    console.log('Trello callback successfull');
-    this.myData = JSON.stringify(data.id);
-    //This works and the data returned is available and correct - great.
-    console.log('Card created successfully. Data returned:' + this.myData);
-  };
+
+  /////////////////////////////////// Cards //////////////////////////////////////////////
+
+
+
+
+
+
+
+
 
 }

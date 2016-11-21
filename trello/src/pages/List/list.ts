@@ -1,13 +1,14 @@
 /**
  * Created by georg on 20.11.2016.
  */
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {TrelloApi} from "../../shared/trello-api.service";
 import {NavController, NavParams, AlertController} from "ionic-angular";
+import {CardPage} from "../Card/card";
 
 
 @Component({
-  selector: 'page-board',
+  selector: 'page-list',
   templateUrl: 'list.html',
   providers: [
     TrelloApi
@@ -27,8 +28,15 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
   this.selectedBoard = this.navParams.data.id;
   console.log("current board: "+this.selectedBoard);
     this.trelloApi.getLists(this.selectedBoard).then(data=> this.lists = data);
-    console.log('lifecycle didload');
+    console.log('lifecycle did actually load');
   }
+
+
+  listSelected($event, item){
+    console.log(item.name + " got clicked");
+    this.nav.push(CardPage, item);
+  }
+
 
   listUpdateSelected($event, item){
     console.log(item.id + " got clicked");
@@ -121,6 +129,7 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
           handler: data => {
             this.trelloApi.createList(this.selectedBoard, data.name);
             console.log('created List in: '+this.selectedBoard);
+
           }
         }
       ]
