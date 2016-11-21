@@ -25,7 +25,7 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
 
   ionViewDidLoad(){
   this.selectedBoard = this.navParams.data.id;
-  console.log(this.selectedBoard);
+  console.log("current board: "+this.selectedBoard);
     this.trelloApi.getLists(this.selectedBoard).then(data=> this.lists = data);
     console.log('lifecycle didload');
   }
@@ -120,7 +120,7 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
           text: 'Create',
           handler: data => {
             this.trelloApi.createList(this.selectedBoard, data.name);
-            console.log('Deleted List');
+            console.log('created List in: '+this.selectedBoard);
           }
         }
       ]

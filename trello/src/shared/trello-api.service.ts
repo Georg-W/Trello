@@ -24,8 +24,8 @@ export class TrelloApi {
   deleteList(listID){
     Trello.put('/lists/'+listID,{closed: true});
   };
-  createList(board, name){
-    Trello.post('/lists/',board,name,this.creationSuccess);
+  createList(board, setName){
+    Trello.post('/lists/',{name: setName, idBoard: board},this.creationSuccess);
   };
 
   constructor() {
@@ -42,7 +42,6 @@ export class TrelloApi {
       error: this.authenticationFailure
     });
   }
-
 
   authenticationSuccess: any = function() {
     //This works

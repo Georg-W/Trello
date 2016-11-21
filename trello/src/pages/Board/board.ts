@@ -30,10 +30,4 @@ export class BoardPage {
   }
 
 
-
-
-
-
-
-
 }
