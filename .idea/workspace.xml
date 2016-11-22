@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1d9e3e18-86c2-4680-a510-22088b3d8821" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/List/list.html" afterPath="$PROJECT_DIR$/trello/src/pages/List/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/List/list.ts" afterPath="$PROJECT_DIR$/trello/src/pages/List/list.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" afterPath="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +39,8 @@
       <file leaf-file-name="list.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            <state relative-caret-position="186">
+              <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
               <folding>
                 <element signature="e#43#83#0" expanded="true" />
               </folding>
@@ -355,12 +353,12 @@
       <workItem from="1479738629813" duration="18317000" />
       <workItem from="1479816148374" duration="5718000" />
       <workItem from="1479835601655" duration="386000" />
-      <workItem from="1479852826238" duration="1460000" />
+      <workItem from="1479852826238" duration="2251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64470000" />
+    <option name="totallyTimeSpent" value="65261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -896,8 +894,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        <state relative-caret-position="186">
+          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
           <folding>
             <element signature="e#43#83#0" expanded="true" />
           </folding>

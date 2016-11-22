@@ -22,6 +22,7 @@ export class ListPage{
   editMode: boolean = false;
   editItem: any;
   selectedBoard: any;
+  refreshSub: any;
 
   gotChanged: boolean = false;
 
@@ -29,8 +30,8 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
 
 
   reloadData(){
-    let timer = Observable.timer(3000,5000);
-    timer.subscribe(x => this.callGetLists(this.selectedBoard));
+    let timer = Observable.timer(3000,2000);
+    this.refreshSub = timer.subscribe(x => this.callGetLists(this.selectedBoard));
     console.log("data got refreshed");
   }
 
@@ -40,7 +41,16 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
     console.log("current board: "+this.selectedBoard);
     console.log('lifecycle did actually load');
     this.callGetLists(this.selectedBoard);
+  }
+
+  ionViewWillLeave() {
+    this.refreshSub.unsubscribe();
+    console.log("Sub got cancelled");
+  }
+
+  ionViewDidEnter(){
     this.reloadData();
+    console.log("did enter");
   }
 
   callGetLists(boardID){
