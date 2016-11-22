@@ -5,6 +5,7 @@ import {Component} from '@angular/core';
 import {TrelloApi} from "../../shared/trello-api.service";
 import {NavController, NavParams, AlertController} from "ionic-angular";
 import {CardPage} from "../Card/card";
+import { Observable } from "rxjs/Rx";
 
 
 @Component({
@@ -17,20 +18,36 @@ import {CardPage} from "../Card/card";
 
 export class ListPage{
 
-  lists: any;
+  lists: Observable<any>;
   editMode: boolean = false;
   editItem: any;
   selectedBoard: any;
 
+  gotChanged: boolean = false;
+
 constructor(private nav: NavController, private navParams: NavParams, public alertCtrl: AlertController, private trelloApi: TrelloApi){}
 
-  ionViewDidLoad(){
-  this.selectedBoard = this.navParams.data.id;
-  console.log("current board: "+this.selectedBoard);
-    this.trelloApi.getLists(this.selectedBoard).then(data=> this.lists = data);
-    console.log('lifecycle did actually load');
+
+  reloadData(){
+    let timer = Observable.timer(3000,5000);
+    timer.subscribe(x => this.callGetLists(this.selectedBoard));
+    console.log("data got refreshed");
   }
 
+
+  ionViewDidLoad(){
+    this.selectedBoard = this.navParams.data.id;
+    console.log("current board: "+this.selectedBoard);
+    console.log('lifecycle did actually load');
+    this.callGetLists(this.selectedBoard);
+    this.reloadData();
+  }
+
+  callGetLists(boardID){
+    console.log("got lists");
+    this.trelloApi.getLists(this.selectedBoard).then(data=> this.lists = data);
+    this.gotChanged = false;
+  }
 
   listSelected($event, item){
     console.log(item.name + " got clicked");
@@ -76,7 +93,8 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
           text: 'Save',
           handler: data => {
             this.trelloApi.putListName(data.name, this.editItem.id);
-            console.log('Saved clicked');
+            this.gotChanged = true;
+            console.log('Saved new Name');
           }
         }
       ]
@@ -100,6 +118,7 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
           text: 'Delete',
           handler: data => {
             this.trelloApi.deleteList(this.editItem.id);
+            this.gotChanged = true;
             console.log('Deleted List');
           }
         }
@@ -128,8 +147,8 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
           text: 'Create',
           handler: data => {
             this.trelloApi.createList(this.selectedBoard, data.name);
+            this.gotChanged = true;
             console.log('created List in: '+this.selectedBoard);
-
           }
         }
       ]

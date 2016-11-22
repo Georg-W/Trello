@@ -59,12 +59,15 @@ export class TrelloApi {
 
   putListName(newName, listID){
     Trello.put('/lists/'+listID,{name: newName});
+    return this.currentBoardID;
   };
   deleteList(listID){
     Trello.put('/lists/'+listID,{closed: true});
+    return this.currentBoardID;
   };
   createList(board, setName){
     Trello.post('/lists/',{name: setName, idBoard: board});
+    return this.currentBoardID;
   };
 
   successGetList: any = function(data) {
