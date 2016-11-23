@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d9e3e18-86c2-4680-a510-22088b3d8821" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/trello/src/shared/shared.ts" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/app/app.scss" afterPath="$PROJECT_DIR$/trello/src/app/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/index.html" afterPath="$PROJECT_DIR$/trello/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/Board/board.html" afterPath="$PROJECT_DIR$/trello/src/pages/Board/board.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/Board/board.ts" afterPath="$PROJECT_DIR$/trello/src/pages/Board/board.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/Card/card.html" afterPath="$PROJECT_DIR$/trello/src/pages/Card/card.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/Card/card.ts" afterPath="$PROJECT_DIR$/trello/src/pages/Card/card.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/List/list.html" afterPath="$PROJECT_DIR$/trello/src/pages/List/list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/pages/List/list.ts" afterPath="$PROJECT_DIR$/trello/src/pages/List/list.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" afterPath="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,26 +33,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="trello-api.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trello/src/shared/trello-api.service.ts">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trello/src/app/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
-              <caret line="69" column="30" lean-forward="false" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-              <folding>
-                <element signature="e#1#43#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="217">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.ts">
+      <file leaf-file-name="board.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trello/src/pages/Board/board.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-              <folding>
-                <element signature="e#43#83#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="248">
+              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,9 +56,22 @@
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="364">
+              <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="131" column="23" lean-forward="true" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+                <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,7 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/trello/src/index.html" />
         <option value="$PROJECT_DIR$/trello/src/shared/shared.ts" />
         <option value="$PROJECT_DIR$/trello/src/pages/board/board.scss" />
         <option value="$PROJECT_DIR$/trello/src/pages/home/home.html" />
@@ -86,14 +103,17 @@
         <option value="$PROJECT_DIR$/trello/src/pages/Card/Card.html" />
         <option value="$PROJECT_DIR$/trello/src/pages/Card/Cards.scss" />
         <option value="$PROJECT_DIR$/trello/src/pages/Board/board.scss" />
-        <option value="$PROJECT_DIR$/trello/src/pages/Board/board.ts" />
         <option value="$PROJECT_DIR$/trello/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/trello/src/pages/Card/Card.ts" />
+        <option value="$PROJECT_DIR$/trello/config.xml" />
+        <option value="$PROJECT_DIR$/trello/src/pages/Board/board.ts" />
         <option value="$PROJECT_DIR$/trello/src/pages/Card/card.ts" />
         <option value="$PROJECT_DIR$/trello/src/pages/Card/card.html" />
-        <option value="$PROJECT_DIR$/trello/config.xml" />
-        <option value="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" />
+        <option value="$PROJECT_DIR$/trello/src/app/app.scss" />
         <option value="$PROJECT_DIR$/trello/src/pages/List/list.html" />
+        <option value="$PROJECT_DIR$/trello/src/shared/trello-api.service.ts" />
+        <option value="$PROJECT_DIR$/trello/src/index.html" />
+        <option value="$PROJECT_DIR$/trello/src/pages/Board/board.html" />
         <option value="$PROJECT_DIR$/trello/src/pages/List/list.ts" />
       </list>
     </option>
@@ -182,6 +202,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicTrello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IonicTrello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -231,32 +273,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicTrello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IonicTrello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trello" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Board" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,34 +369,36 @@
       <workItem from="1479738629813" duration="18317000" />
       <workItem from="1479816148374" duration="5718000" />
       <workItem from="1479835601655" duration="386000" />
-      <workItem from="1479852826238" duration="2251000" />
+      <workItem from="1479852826238" duration="2409000" />
+      <workItem from="1479930623092" duration="159000" />
+      <workItem from="1479930815596" duration="1596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65261000" />
+    <option name="totallyTimeSpent" value="67174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.089370705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19830777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25368065" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -518,7 +536,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
+            <element signature="e#43#83#0" expanded="false" />
+            <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showCreatePrompt#0;n#ListPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -546,7 +567,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
+            <element signature="e#43#83#0" expanded="false" />
+            <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showCreatePrompt#0;n#ListPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -597,7 +621,10 @@
         <state relative-caret-position="2201">
           <caret line="122" column="62" lean-forward="false" selection-start-line="122" selection-start-column="62" selection-end-line="122" selection-end-column="62" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
+            <element signature="e#43#83#0" expanded="false" />
+            <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showCreatePrompt#0;n#ListPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -640,7 +667,10 @@
         <state relative-caret-position="3565">
           <caret line="115" column="42" lean-forward="true" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
+            <element signature="e#43#83#0" expanded="false" />
+            <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showCreatePrompt#0;n#ListPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -683,7 +713,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
+            <element signature="e#43#83#0" expanded="false" />
+            <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showCreatePrompt#0;n#ListPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -726,7 +759,10 @@
         <state relative-caret-position="465">
           <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
+            <element signature="e#43#83#0" expanded="false" />
+            <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showCreatePrompt#0;n#ListPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -765,13 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trello/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -820,38 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trello/src/pages/Board/board.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" column="85" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trello/src/pages/Board/board.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trello/src/pages/Card/card.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="e#43#85#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trello/src/pages/Card/card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trello/platforms/android/src/com/ionicframework/trello547479/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -874,30 +871,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.html">
+    <entry file="file://$PROJECT_DIR$/trello/src/pages/Board/board.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="31">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/pages/Card/card.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/pages/Card/card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/assets/icon/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trello/src/shared/trello-api.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="69" column="30" lean-forward="false" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
+        <state relative-caret-position="472">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="e#1#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/app/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trello/src/pages/Board/board.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trello/src/pages/List/list.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="193">
+          <caret line="131" column="23" lean-forward="true" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
           <folding>
-            <element signature="e#43#83#0" expanded="true" />
+            <element signature="n#!!block;n#showUpdatePrompt#0;n#ListPage#0" expanded="false" />
+            <element signature="n#!!block;n#showDeletePrompt#0;n#ListPage#0" expanded="false" />
           </folding>
         </state>
       </provider>

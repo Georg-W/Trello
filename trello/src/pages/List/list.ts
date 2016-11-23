@@ -23,50 +23,41 @@ export class ListPage{
   editItem: any;
   selectedBoard: any;
   refreshSub: any;
-
   gotChanged: boolean = false;
 
 constructor(private nav: NavController, private navParams: NavParams, public alertCtrl: AlertController, private trelloApi: TrelloApi){}
 
 
-  reloadData(){
-    let timer = Observable.timer(3000,2000);
-    this.refreshSub = timer.subscribe(x => this.callGetLists(this.selectedBoard));
-    console.log("data got refreshed");
-  }
-
+///////////////////////////////////Lifecycle Events/////////////////////////////////////77
 
   ionViewDidLoad(){
     this.selectedBoard = this.navParams.data.id;
-    console.log("current board: "+this.selectedBoard);
-    console.log('lifecycle did actually load');
     this.callGetLists(this.selectedBoard);
   }
 
   ionViewWillLeave() {
     this.refreshSub.unsubscribe();
-    console.log("Sub got cancelled");
   }
 
   ionViewDidEnter(){
     this.reloadData();
-    console.log("did enter");
+  }
+
+  listSelected($event, item){
+    this.nav.push(CardPage, item);
+  }
+
+  reloadData(){
+    let timer = Observable.timer(3000,2000);
+    this.refreshSub = timer.subscribe(x => this.callGetLists(this.selectedBoard));
   }
 
   callGetLists(boardID){
-    console.log("got lists");
     this.trelloApi.getLists(this.selectedBoard).then(data=> this.lists = data);
     this.gotChanged = false;
   }
 
-  listSelected($event, item){
-    console.log(item.name + " got clicked");
-    this.nav.push(CardPage, item);
-  }
-
-
   listUpdateSelected($event, item){
-    console.log(item.id + " got clicked");
     this.editMode = true;
     this.editItem = item;
     this.showUpdatePrompt();
@@ -96,7 +87,6 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
         {
           text: 'Cancel',
           handler: data => {
-            console.log('Cancel clicked');
           }
         },
         {
@@ -104,7 +94,6 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
           handler: data => {
             this.trelloApi.putListName(data.name, this.editItem.id);
             this.gotChanged = true;
-            console.log('Saved new Name');
           }
         }
       ]
@@ -121,7 +110,6 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
         {
           text: 'Cancel',
           handler: data => {
-            console.log('Cancel clicked');
           }
         },
         {
@@ -129,7 +117,6 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
           handler: data => {
             this.trelloApi.deleteList(this.editItem.id);
             this.gotChanged = true;
-            console.log('Deleted List');
           }
         }
       ]
@@ -143,14 +130,13 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
       inputs: [
         {
           name: 'name',
-          placeholder: "default"
+          placeholder: "list name"
         },
       ],
       buttons: [
         {
           text: 'Cancel',
           handler: data => {
-            console.log('Cancel clicked');
           }
         },
         {
@@ -158,13 +144,11 @@ constructor(private nav: NavController, private navParams: NavParams, public ale
           handler: data => {
             this.trelloApi.createList(this.selectedBoard, data.name);
             this.gotChanged = true;
-            console.log('created List in: '+this.selectedBoard);
           }
         }
       ]
     });
     prompt.present();
   }
-
 
 }

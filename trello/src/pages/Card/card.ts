@@ -26,7 +26,6 @@ export class CardPage {
     console.log(item.name + " got clicked");
   }
 
-
   ionViewDidLoad(){
     this.selectedListID = this.navParams.data.id;
     this.trelloApi.getCards(this.selectedListID).then(data=> this.cards = data);

@@ -15,20 +15,14 @@ export class BoardPage {
 
   boards: any;
 
+  constructor(private nav: NavController, private trelloApi: TrelloApi){}
 
-  constructor(private nav: NavController, private trelloApi: TrelloApi){
+  //////////////////////////Lifecycle Hooks/////////////////////////////////
+  ionViewDidLoad(){
+    this.trelloApi.getBoards().then(data=> this.boards = data);
   }
 
   boardSelected($event, item){
-    console.log(item.name + " got clicked");
     this.nav.push(ListPage, item);
   }
-
-
-  ionViewDidLoad(){
-    this.trelloApi.getBoards().then(data=> this.boards = data);
-    console.log('lifecycle didload');
-  }
-
-
 }

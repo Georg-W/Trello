@@ -7,17 +7,14 @@
 </ion-header>
 
 <ion-content padding>
-  <h1>Lists</h1>
   <ion-list>
     <button ion-button (click)="createList()">CREATE</button>
     <div ion-item *ngFor="let item of lists">
       <button ion-item (click)="listSelected($event, item)">
         {{item.name}}
       </button>
-      <button ion-button item-right="" (click)="listUpdateSelected($event, item)">EDIT</button>
-      <button ion-button item-right="" (click)="listDeleteSelected($event, item)">DELETE</button>
+      <button color="secondary" ion-button item-right="" (click)="listUpdateSelected($event, item)">EDIT</button>
+      <button color="danger" ion-button item-right="" (click)="listDeleteSelected($event, item)">DELETE</button>
     </div>
-
-
   </ion-list>
 </ion-content>

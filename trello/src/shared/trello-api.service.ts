@@ -28,7 +28,6 @@ export class TrelloApi {
 /////////////////////////////////// Auth //////////////////////////////////////////////
 
   authenticationSuccess: any = function() {
-    //This works
     console.log("Successful authentication");
   };
   authenticationFailure: any = function() {
@@ -43,55 +42,38 @@ export class TrelloApi {
   };
 
   successGetBoard: any = function(data) {
-    console.log("gotBoards");
   };
 
   failureGetBoard: any = function() {
-    console.log("fail get Boards");
   };
 
   /////////////////////////////////// Lists //////////////////////////////////////////////
 
   getLists(boardID){
     this.currentBoardID = boardID;
-    return Trello.get('/boards/'+boardID+'/lists', this.successGetList, this.failureGetList);
+    return Trello.get('/boards/'+boardID+'/lists');
   }
 
   putListName(newName, listID){
     Trello.put('/lists/'+listID,{name: newName});
     return this.currentBoardID;
   };
+
   deleteList(listID){
     Trello.put('/lists/'+listID,{closed: true});
     return this.currentBoardID;
   };
+
   createList(board, setName){
     Trello.post('/lists/',{name: setName, idBoard: board});
     return this.currentBoardID;
   };
 
-  successGetList: any = function(data) {
-    console.log("got lists");
-  };
-
-  failureGetList: any = function() {
-    console.log("fail get lists");
-  };
-
-
   /////////////////////////////////// Cards //////////////////////////////////////////////
-
 
   getCards(listID){
     this.currentListID = listID;
-    console.log("cards loaded");
     return Trello.get("/lists/"+listID+"/cards");
-
   }
-
-
-
-
-
 
 }

@@ -7,7 +7,6 @@
 </ion-header>
 
 <ion-content padding>
-  <h1>Boards</h1>
   <ion-list>
     <button ion-item *ngFor="let item of boards" (click)="boardSelected($event, item)">
       {{item.name}}
